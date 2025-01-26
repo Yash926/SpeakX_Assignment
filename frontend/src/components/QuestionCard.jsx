@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FileQuestion, Mic, Book, MessageSquare } from "lucide-react";
+import { FileQuestion, Mic, Book} from "lucide-react";
 import "./QuestionCard.css";
 import QuestionDetails from "./QuestionDetails";
 
