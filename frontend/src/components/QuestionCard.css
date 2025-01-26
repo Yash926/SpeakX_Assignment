@@ -3,7 +3,6 @@
   border-radius: 16px;
   padding: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -11,14 +10,14 @@
 
 .question-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .question-type {
   display: inline-flex;
   align-items: center;
+  width: fit-content;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: rgba(255, 87, 51, 0.1);
@@ -46,18 +45,18 @@
   transform: translateY(10px);
 }
 
-.view-details:hover {
+/* .view-details:hover {
   background: #ff5733;
   border-color: #ff5733;
   color: white;
-}
+} */
 
 .question-title {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #1f2937;
-  margin-bottom: 1rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
   transition: color 0.2s ease;
 }
 
@@ -108,20 +107,10 @@
   color: #6b7280;
 }
 
-.question-card:hover {
-  border-color: #ff5733;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
 
 .question-card:hover .question-type,
 .question-card:hover .question-title {
   color: #ff5733;
-}
-
-.question-card:hover .view-details {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Common preview styles */
@@ -170,7 +159,6 @@
   font-weight: 500;
   font-size: 1.125rem;
   color: #1f2937;
-  animation: float 3s ease-in-out infinite;
 }
 
 /* MCQ Preview Styles */

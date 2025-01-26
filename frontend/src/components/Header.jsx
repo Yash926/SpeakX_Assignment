@@ -13,17 +13,6 @@ function Header() {
           />
         </a>
         <nav className="header-nav">
-          {/* <div className="nav-links">
-            <a href="/search" className="nav-link">
-              Search
-            </a>
-            <a href="/quiz" className="nav-link">
-              Quiz
-            </a>
-            <a href="/about" className="nav-link">
-              About
-            </a>
-          </div> */}
           <a href="https://www.speakx.in/app" rel="noreferrer" target="_blank"><button className="download-btn">Download Now</button></a>
         </nav>
       </div>
