@@ -1,0 +1,246 @@
+.question-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.question-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 87, 51, 0.1);
+  border-radius: 9999px;
+  color: #ff5733;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.type-icon {
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.view-details {
+  background: none;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #ff5733;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.view-details:hover {
+  background: #ff5733;
+  border-color: #ff5733;
+  color: white;
+}
+
+.question-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.question-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.tag-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.tag-grammar {
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+}
+
+.tag-vocabulary {
+  background: rgba(5, 150, 105, 0.08);
+  color: #059669;
+}
+
+.tag-intermediate {
+  background: rgba(245, 158, 11, 0.08);
+  color: #f59e0b;
+}
+
+.tag-beginner {
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
+}
+
+.tag-duration {
+  background: rgba(107, 114, 128, 0.08);
+  color: #6b7280;
+}
+
+.question-card:hover {
+  border-color: #ff5733;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.question-card:hover .question-type,
+.question-card:hover .question-title {
+  color: #ff5733;
+}
+
+.question-card:hover .view-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Common preview styles */
+.preview-container {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.preview-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, white 90%);
+  pointer-events: none;
+}
+
+/* Anagram Preview Styles */
+.anagram-preview {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.anagram-type {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.anagram-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.anagram-block {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #1f2937;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* MCQ Preview Styles */
+.mcq-preview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.mcq-option-preview {
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  color: #1f2937;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Read Along Preview Styles */
+.read-along-preview {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.read-along-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #ff5733;
+  opacity: 0.5;
+}
+
+.read-along-text {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Content Only Preview Styles */
+.content-preview {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.content-text {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}

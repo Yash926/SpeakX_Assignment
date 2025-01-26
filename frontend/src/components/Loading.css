@@ -1,0 +1,59 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  grid-column: 1 / -1;
+  background: linear-gradient(to bottom, white, rgba(255, 241, 240, 0.5));
+  border-radius: 16px;
+  border: 1px solid rgba(255, 87, 51, 0.1);
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+}
+
+.spinner circle {
+  stroke: #ff5733;
+  stroke-dasharray: 128;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+.loading-text {
+  color: #4b5563;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 128;
+  }
+  50% {
+    stroke-dashoffset: 32;
+  }
+  100% {
+    stroke-dashoffset: 128;
+  }
+}
