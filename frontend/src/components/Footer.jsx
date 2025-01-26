@@ -13,22 +13,22 @@ function Footer() {
               English Speaker
             </h2>
             <div className="footer-links">
-              <a href="/about" className="footer-link">
+              <a href="https://speakx.ai/about-us" className="footer-link">
                 About Us
               </a>
-              <a href="/contact" className="footer-link">
+              <a href="https://speakx.ai/contact-us" className="footer-link">
                 Contact Us
               </a>
-              <a href="/terms" className="footer-link">
+              <a href="https://speakx.ai/terms-conditions" className="footer-link">
                 Terms and Conditions
               </a>
-              <a href="/privacy" className="footer-link">
+              <a href="https://speakx.ai/privacy-policy" className="footer-link">
                 Privacy Policy
               </a>
-              <a href="/refund" className="footer-link">
+              <a href="https://speakx.ai/refund-policy" className="footer-link">
                 Refund Policy
               </a>
-              <a href="/deletion" className="footer-link">
+              <a href="https://speakx.ai/user-data-deletion-policy" className="footer-link">
                 User Data Deletion Policy
               </a>
             </div>
@@ -44,7 +44,8 @@ function Footer() {
               <br />
               Haryana, India, 122018
             </p>
-            <button className="footer-download">Download Now!</button>
+            <a href="https://www.speakx.in/app" rel="noreferrer" target="_blank"><button className="footer-download">Download Now!</button></a>
+
           </div>
         </div>
         <div className="footer-bottom">
